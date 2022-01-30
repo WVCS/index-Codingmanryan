@@ -1,0 +1,275 @@
+<html>
+ <head>
+ </head>
+ <body>
+  <div class="nav">
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="noun.html">Noun</a></li>
+    <li><a href="#">PAGE</a></li>
+   </ul>
+  </div>  
+  <div class="container">
+   <img src="https://www.wallpaperkiss.com/wimg/b/233-2338653_big.jpg" class="image1">
+   <img src="https://c.tenor.com/EXlya2rVYKoAAAAC/heaven-sky.gif" class="image2">
+   <div class="overlay">
+    <div class="text">Hello World
+      EXAMPLE EXAMPLE EXAMPLE
+      EXAMPLE EXAMPLE EXAMPLE
+      EXAMPLE EXAMPLE EXAMPLE</div>
+   </div>
+  </div>
+  <div class="container2">
+   <img src="https://www.rct.uk/sites/default/files/collection-online/0/9/256039-1330622089.jpg" class="image3">
+   <img src="https://c.tenor.com/59dg93TXI8cAAAAd/landscape.gif" class="image4">
+   <div class="overlay2">
+    <div class="text2">Hello World
+      EXAMPLE EXAMPLE EXAMPLE
+      EXAMPLE EXAMPLE EXAMPLE
+      EXAMPLE EXAMPLE EXAMPLE</div>
+   </div>
+  </div>
+  <div class="container3">
+   <img src="https://i.ytimg.com/vi/L_LUpnjgPso/maxresdefault.jpg" class="image5">
+   <img src="https://c.tenor.com/Orr8AAdwGXQAAAAd/fireplace.gif" class="image6">
+   <div class="overlay3">
+    <div class="text3">Hello World
+      EXAMPLE EXAMPLE EXAMPLE
+      EXAMPLE EXAMPLE EXAMPLE
+      EXAMPLE EXAMPLE EXAMPLE</div>
+   </div>
+  </div>
+  <div class="foot">
+    <center>
+     <h1>SOCIAL SECURITY NUMBER</h1>
+     <input type="text">
+    </center>
+  </div>
+  <img class="eyes" src="https://cpb-ap-se2.wpmucdn.com/blogs.unimelb.edu.au/dist/3/41/files/2018/09/August_Natterer_Meine_Augen_zur_Zeit_der_Erscheinungen-1yy6un7.jpg">
+  <img class="logo" src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg" width=200px>
+  <div class="title"><center><h1>RYAN'S CULT</h1></center></div>
+  <audio autoplay>
+   <source src="TENET Official Soundtrack _ MEETING NEIL - Ludwig Göransson _ WaterTower.mp3" type="audio/mpeg">
+  </audio>
+ </body>
+</html>
+<style>
+body{
+  background-image: url(https://cpb-ap-se2.wpmucdn.com/blogs.unimelb.edu.au/dist/3/41/files/2018/09/August_Natterer_Meine_Augen_zur_Zeit_der_Erscheinungen-1yy6un7.jpg);
+}
+.title{
+  top:100px;
+  left:30%;
+  font-size: 40px;
+  position: absolute;
+  text-decoration: overline;
+}
+.logo{
+  position: fixed;
+  top: 100px;
+  left:100px;
+  border-radius:50%;
+  z-index: 3;
+}
+/*header*/
+.nav{
+  width: 100%; 
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.1);
+  text-align: center;
+}
+li{
+  display: inline-block; 
+}
+li a{
+  display: block;
+  color: white;
+  padding: 20px 80px;
+  text-decoration: none;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-shadow: 2px 2px 5px black;
+}
+li a:hover{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+
+/*first section*/
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.image1{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1000px;
+  filter: brightness(50%);
+}
+.image2{
+  width: 100%;
+  height: 1000px;
+}
+.overlay {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.text {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transition-duration: 1s;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container:hover .overlay {
+  opacity: 50%;
+}
+.container:hover .image1 {
+  opacity: 0%;
+}
+.container:hover .text {
+  top: 50%;
+}
+
+
+/*second section*/
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+.image3{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1000px;
+  filter: brightness(50%);
+}
+.image4{
+  width: 100%;
+  height: 1000px;
+}
+.overlay2 {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.text2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transition-duration: 1s;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container2:hover .overlay2 {
+  opacity: 50%;
+}
+.container2:hover .image3 {
+  opacity: 0%;
+}
+.container2:hover .text2 {
+  top: 50%;
+}
+
+/*third section*/
+
+.container3 {
+  position: relative;
+  width: 100%;
+}
+.image5{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1000px;
+  filter: brightness(50%);
+}
+.image6{
+  width: 100%;
+  height: 1000px;
+}
+.overlay3 {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.text3 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transition-duration: 1s;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container3:hover .overlay3 {
+  opacity: 50%;
+}
+.container3:hover .image5 {
+  opacity: 0%;
+}
+.container3:hover .text3 {
+  top: 50%;
+}
+
+/*footer*/
+
+.foot{
+  color: white;
+  height:150px;
+}
+.eyes{
+width:100%;
+height: 200px;
+position:fixed;
+bottom:0;
+z-index:-1;
+}
+</style>
