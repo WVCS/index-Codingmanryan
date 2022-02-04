@@ -5,7 +5,7 @@
  <body>
   <div id="popup" onclick="off()">
    <div id="vid">
-<iframe id="vide" width="560" height="315" src="https://www.youtube.com/embed/8Y5cftds7-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="vide" width="560" height="315" src="https://www.youtube.com/embed/8Y5cftds7-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div>
   </div>
   <div class="nav">
@@ -46,10 +46,10 @@
    </div>
   </div>
   <div class="foot">
-    <center>
-     <h1>SOCIAL SECURITY NUMBER</h1>
-     <input type="text">
-    </center>
+   <center>
+    <h1>SOCIAL SECURITY NUMBER</h1>
+    <input type="text">
+   </center>
   </div>
   <img class="eyes" src="https://cpb-ap-se2.wpmucdn.com/blogs.unimelb.edu.au/dist/3/41/files/2018/09/August_Natterer_Meine_Augen_zur_Zeit_der_Erscheinungen-1yy6un7.jpg">
   <img class="logo" src="Ryan's Cult-logos.jpeg" width=200px>
@@ -59,11 +59,12 @@
   </audio>
  </body>
 </html>
+
 <style>
-body{
+body {
   background-image: url(https://cpb-ap-se2.wpmucdn.com/blogs.unimelb.edu.au/dist/3/41/files/2018/09/August_Natterer_Meine_Augen_zur_Zeit_der_Erscheinungen-1yy6un7.jpg);
 }
-.title{
+.title {
   top:200px;
   left:50%;
   font-size: 40px;
@@ -87,7 +88,7 @@ body{
   z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
-#vid{
+#vid {
   position: absolute;
   padding: 10px;
   background-color: white;
@@ -96,14 +97,14 @@ body{
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
-#vide{
+#vide {
   animation-name: example;
   animation-duration: 4s;
 }
-@keyframes example{
+@keyframes example {
   0% {height:10px}
 }
-.logo{
+.logo {
   position: fixed;
   top: 15px;
   left:15px;
@@ -111,13 +112,13 @@ body{
   z-index: 3;
 }
 /*header*/
-.nav{
+.nav {
   width: 100%; 
   position: fixed;
   top: 0px;
   z-index: 2;
 }
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -125,10 +126,10 @@ ul{
   background-color: rgba(0,0,0,.1);
   text-align: center;
 }
-li{
+li {
   display: inline-block; 
 }
-li a{
+li a {
   display: block;
   color: white;
   padding: 20px 80px;
@@ -136,28 +137,25 @@ li a{
   font-family: Copperplate, Papyrus, fantasy;
   text-shadow: 2px 2px 5px black;
 }
-li a:hover{
+li a:hover {
   background-color: white;
   color: black;
   font-weight: bold;
   font-variant: small-caps;
 }
-
-
 /*first section*/
-
 .container {
   position: relative;
   width: 100%;
 }
-.image1{
+.image1 {
   position: absolute;
   display: block;
   width: 100%;
   height: 1000px;
   filter: brightness(50%);
 }
-.image2{
+.image2 {
   width: 100%;
   height: 1000px;
 }
@@ -194,22 +192,19 @@ li a:hover{
 .container:hover .text {
   top: 50%;
 }
-
-
 /*second section*/
-
 .container2 {
   position: relative;
   width: 100%;
 }
-.image3{
+.image3 {
   position: absolute;
   display: block;
   width: 100%;
   height: 1000px;
   filter: brightness(50%);
 }
-.image4{
+.image4 {
   width: 100%;
   height: 1000px;
 }
@@ -246,21 +241,19 @@ li a:hover{
 .container2:hover .text2 {
   top: 50%;
 }
-
 /*third section*/
-
 .container3 {
   position: relative;
   width: 100%;
 }
-.image5{
+.image5 {
   position: absolute;
   display: block;
   width: 100%;
   height: 1000px;
   filter: brightness(50%);
 }
-.image6{
+.image6 {
   width: 100%;
   height: 1000px;
 }
@@ -297,14 +290,12 @@ li a:hover{
 .container3:hover .text3 {
   top: 50%;
 }
-
 /*footer*/
-
-.foot{
+.foot {
   color: white;
   height:150px;
 }
-.eyes{
+.eyes {
 width:100%;
 height: 200px;
 position:fixed;
@@ -312,6 +303,7 @@ bottom:0;
 z-index:-1;
 }
 </style>
+
 <script>
  function off() {
   document.getElementById("popup").style.display = "none";
