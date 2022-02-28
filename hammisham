@@ -1,0 +1,58 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDPTR</title>
+  <link rel="icon" href="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png">
+ </head>
+ <body>
+  <!--Header-->
+  <div class="superheader">
+   <div class="main">
+	  <h1 id="title">Hamiis hammys ham</h1>
+   </div>
+   <div class="logo">
+    <img src="Hamiis Ham-logos_transparent (1).png" width=100% height=100px>
+   </div>
+  </div>
+  <div class="nav">
+   <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="https://townsquare.media/site/699/files/2013/12/death-stare.jpg?w=980&q=75">News</a></li>
+    <li><a href="https://townsquare.media/site/699/files/2013/12/death-stare.jpg?w=980&q=75">Contact</a></li>
+   </ul>
+   </div>
+  <div id="slideshow">
+   <div class="container">
+    <section><img src="https://food.unl.edu/newsletters/images/meat%20%282%29.jpg" width=100% height=100%></section>
+    <section><img src="https://www.gannett-cdn.com/-mm-/675ba115506e09d3d7e32d07055fdcb503ebe995/c=0-2-1272-718/local/-/media/2020/08/18/USATODAY/usatsports/1.crowd-cow-box-MEAT0720.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp" width=100% height=100%></section>
+    <section><img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8F5F/production/_109030763_gettyimages-687790334.jpg" width=100% height=100%></section>
+    <section><img src="https://food.unl.edu/newsletters/images/meat%20%282%29.jpg" width=100% height=100%></section>
+   </div>
+  </div>
+  <!--Body-->
+  <div class="first">
+   <div style="display:inline-block;vertical-align:top;padding:20px">
+    <img src="https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/19227-orange-glazed-baked-ham-600x600.jpg?ext=.jpg" alt="img"/>
+   </div>
+  <div style="display:inline-block;padding:20px;">
+   <h1>
+    The Meat
+   </h1>
+   <p>
+    Ham
+   </p>
+  </div>
+  </div>
+  <div class="second">
+   <a href="https://townsquare.media/site/699/files/2013/12/death-stare.jpg?w=980&q=75"><center><h1>CLICK FOR OTHER MENU OPTIONS</h1></center></a>
+  </div>
+  <!--Footer-->
+  <div class="footer">
+   <a href="https://townsquare.media/site/699/files/2013/12/death-stare.jpg?w=980&q=75"><img style="padding-top: 2.5px; padding-right: 5px; float: right;" src="https://icon-library.com/images/small-facebook-icon-transparent/small-facebook-icon-transparent-22.jpg" width="28" height="28"></a>
+   <a href="https://townsquare.media/site/699/files/2013/12/death-stare.jpg?w=980&q=75"><img style="padding-top: 5.5px; float: right;" src="https://icon-library.com/images/google-plus-icon-transparent-png/google-plus-icon-transparent-png-3.jpg" width="23" height="23"></a>
+   <a href="https://townsquare.media/site/699/files/2013/12/death-stare.jpg?w=980&q=75"><img style="padding-top: 2px; float: right;" src="https://cliply.co/wp-content/uploads/2019/07/371907030_TWITTER_ICON_1080.png" width="30" height="30"></a>
+  </div>
+ </body>
+</html>
