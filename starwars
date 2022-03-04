@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starwars</title>
+  </head>
+  <body>
+    <p id="count"></p>
+    <div class="container">
+	    <section class="demo">
+		    <img src="HOME.png" width=100% height="600">
+      </section>
+
+	    <section div class="demo">
+		    <img src="Info.png" width=100% height="600">
+	    </section>
+
+	    <section div class="demo">
+		    <img src="Booking.png" width=100% height="600">
+	    </section>
+
+	    <section div class="demo">
+		    <img src="THE DETAILS.png" width=100% height="600">
+	    </section>
+    </div>  
+  </body>
+</html>
+
+<style>
+body {
+	margin: 0;
+	background-color: black;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+	Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	transition: background-color 0.3s ease;
+}
+
+.container {
+	width: 100%;
+}
+
+section {
+  height: 600px;
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+	top: 0px;
+	background-color: #fff;
+	margin: 0px auto;
+	padding: 0px 0px;
+	text-align: center;
+	border-radius: 0px;
+	text-align: center;
+	color: #333;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+section.active {
+	opacity: 1;
+	top: 0;
+}
+
+#count {
+  color: white;
+  text-align: right;
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  top: 2060px;
+  right: 10%;
+  font-family: 'Courier New', monospace;
+  margin-top: 0px;
+  z-index: 10;
+}
+</style>
+
+<script>
+function scrollReveal() {
+	var revealPoint = 200;
+	var revealElement = document.querySelectorAll(".demo");
+	for (var i = 0; i < revealElement.length; i++) {
+		var windowHeight = window.innerHeight;
+		var revealTop = revealElement[i].getBoundingClientRect().top;
+		if (revealTop < windowHeight - revealPoint) {
+			revealElement[i].classList.add("active");
+		} else {
+			revealElement[i].classList.remove("active");
+		}
+	}
+}
+
+window.addEventListener("scroll", scrollReveal);
+scrollReveal();
+
+
+var countDownDate = new Date("March 21, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("count").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("count").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
