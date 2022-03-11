@@ -10,9 +10,9 @@
 <body>
  <div class="container">
  </div>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.3358851414514!2d-75.30694058461737!3d39.97859857941842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c052c09eaaab%3A0x50235d1939d3a6cc!2sJo%20Ann%20Cohen!5e0!3m2!1sen!2sus!4v1647038345527!5m2!1sen!2sus" width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
  <div class="fo">
    <center>
-    <br>
     <h1>BOOKING</h1>
      <form action="result.php" method="get">
       First Name: <input type="text" name="fname"><br><br>
@@ -44,7 +44,23 @@ body{
   font-family: 'Courier New', monospace;
   position:absolute;
   z-index:20;
+  top:20%;
+  left:50%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: black;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  color: white;
+}
+iframe{
+  position:absolute;
   top:25%;
-  left:40%;
+  left:25%;
 }
 </style>
