@@ -39,6 +39,7 @@
 		    <img src="THE DETAILS.png" width=100% height="600">
 	    </section>
     </div>  
+    <img class="jumpscare" src="https://c.tenor.com/tjcjObRIvTQAAAAi/jumpscare-fnaf.gif">
   </body>
 </html>
 
@@ -155,6 +156,21 @@ li a:hover{
   box-shadow: 0px 0px 5px 12px red;
   filter: hue-rotate(345deg) saturate(5) brightness(1.5);
   transition: 1s;
+}
+.jumpscare{
+  height:100vh;
+  width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-10;
+  opacity:0;
+}
+@media screen and (max-width: 800px) {
+  .jumpscare {
+    opacity:1;
+    z-index:60;
+  }
 }
 </style>
 
