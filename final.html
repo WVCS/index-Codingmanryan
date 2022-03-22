@@ -8,7 +8,7 @@
 </head>
 <body>
   
-<img src="https://www.computerhope.com/jargon/c/center.jpg" id="themotor">
+<img src="Looking Center.gif" id="themotor">
   
 <div class="rightf" onclick="Ri()">
   
@@ -53,3 +53,41 @@ body{
   z-index:3;
 }
 </style>
+<script>
+var r = false;
+var l = false;
+var c = true;
+function Ri() {
+  r = true;
+  if(c){
+    document.getElementById("themotor").src="Looking Center to Right.gif";
+    c = false;
+  }
+  if(l){
+    document.getElementById("themotor").src="Looking Left to Right.gif";
+    l = false;
+  }
+}
+function Ce() {
+  c = true;
+  if(r){
+    document.getElementById("themotor").src="Looking Right to Center.gif";
+    r = false;
+  }
+  if(l){
+    document.getElementById("themotor").src="Looking Left to Center.gif";
+    l = false;
+  }
+}
+function Le() {
+  l = true;
+  if(r){
+    document.getElementById("myImageId").src="Looking Right to Left.gif";
+    r = false;
+  }
+  if(c){
+    document.getElementById("myImageId").src="Looking Center to Left.gif";
+    c = false;
+  }
+}
+</script>
