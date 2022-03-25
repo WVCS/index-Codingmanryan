@@ -23,6 +23,9 @@
 <div id="bee"> 
 <img src="https://ae01.alicdn.com/kf/H482cb8107478403ebf86f0962e70c3aaB/KLARUS-E3-LED-Flashlight-Cree-XHP35-HD-2200LM-Mini-Flashligh-by-21700-Battery-for-Camping-Hiking.png" width="100px">
 </div>
+<div id="img1" class="but"><a href="#"><img src="Cont.png" width="200px"></a></div>
+<div id="img2" class="but"><a href="#"><img src="Cont (1).png" width="200px"></a></div>
+<div id="img3" class="but"><a href="#"><img src="Cont (2).png" width="200px"></a></div>
 <audio autoplay loop>
   <source src="FNAF 4_ Main Menu Theme.mp3" type="audio/mpeg">
 </audio>
@@ -68,6 +71,28 @@ body{
         filter: FlipH;
 }
 #bee {transition: transform .5s}
+#img1{
+  top:40%;
+  left: 10%;
+  position: absolute;
+  z-index: -10;
+}
+#img2{
+  top:40%;
+  margin-left: 47%;
+  position: absolute;
+  z-index: 10;
+}
+#img3{
+  top:40%;
+  left: 80%;
+  position: absolute;
+  z-index: -10;
+}
+.but:hover{
+  filter: brightness(1.5);
+  transition: 1s;
+}
 </style>
 <script>
 var r = false;
@@ -83,6 +108,9 @@ function Ri() {
     document.getElementById("themotor").src="Left to Right.gif";
     l = false;
   }
+  document.getElementById("img1").style.zIndex = "-10";
+  document.getElementById("img2").style.zIndex = "-10";
+  document.getElementById("img3").style.zIndex = "10";
 }
 function Ce() {
   c = true;
@@ -94,6 +122,9 @@ function Ce() {
     document.getElementById("themotor").src="Left to Center.gif";
     l = false;
   }
+  document.getElementById("img1").style.zIndex = "-10";
+  document.getElementById("img2").style.zIndex = "10";
+  document.getElementById("img3").style.zIndex = "-10";
 }
 function Le() {
   l = true;
@@ -105,6 +136,9 @@ function Le() {
     document.getElementById("themotor").src="Center to Left.gif";
     c = false;
   }
+  document.getElementById("img1").style.zIndex = "10";
+  document.getElementById("img2").style.zIndex = "-10";
+  document.getElementById("img3").style.zIndex = "-10";
 }
 var bee = document.getElementById("bee");
 		document.addEventListener("mousemove", getMouse); 
