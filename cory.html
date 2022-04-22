@@ -15,6 +15,7 @@
 <a href="#"><img id="op2" src="https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=" width="400px" height="100px"></a>
 <a href="#"><img id="op3" src="https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=" width="400px" height="100px"></a>
 <h1>CORY<br>WONG</h1>
+<div id="myDIV"><img class="m1" src="https://static.vecteezy.com/system/resources/thumbnails/001/200/725/small/musical-note.png" width="80px"></div>
 <audio id="myAudio">
   <source src="FNAF 4_ Main Menu Theme.mp3" type="audio/mpeg">
 </audio>
@@ -86,11 +87,23 @@ h1{
   filter: brightness(1.5);
   cursor: pointer;
 }
+#myDIV{
+  position: absolute;
+  z-index:-15;
+  animation: m11 3s infinite;
+  display:none;
+}
+@keyframes m11 {
+  from {bottom: 200px;
+  left:650px;}
+  to {bottom: 600px;
+  left:600px; opacity:0;}
+}
 </style>
 <script>
 var x = document.getElementById("myAudio");
 function playAudio() {
   x.play();
-  /*document.getElementById("myDIV").style.display = "block";*/
+  document.getElementById("myDIV").style.display = "block";
 }
 </script>
