@@ -1,0 +1,298 @@
+<html>
+ <head>
+ </head>
+ <body>
+  <div class="container">
+   <div class="boy joey"></div>
+   <div class="boy donnie"></div>
+   <div class="boy jordan"></div>
+   <div class="boy danny"></div>
+   <div class="boy jonathan"></div>
+   <div class="boy brian"></div>
+   <div class="boy aj"></div>
+   <div class="boy nick"></div>
+   <div class="boy kevin"></div>
+   <div class="boy howied"></div>
+  </div>
+  <div class="text">
+   <span>#</span>
+   <span>THE</span>
+   <span>HEARD</span>
+   <span>HERD!</span>
+  </div>
+ </body>
+</html>
+body {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/90spattern.jpg');
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 4000px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.text {
+  position: fixed;
+  color:white;
+  text-shadow: 2px 2px black;
+  width: 760px;
+  height: 90px;
+  top: 50%;
+  margin-top: -45px;
+  left: 50%;
+  margin-left: -360px;
+  z-index:-1;
+}
+span {
+  display: inline-block;
+  position: relative;
+  font: 'Arial Black', Arial;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.container {
+  height: 4000px;
+  overflow: hidden;
+}
+
+.boy {
+  display: block;
+  position: absolute;
+}
+
+.joey {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/joey.png);
+  width: 300px;
+  height: 418px;
+}
+
+.donnie {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/donnie.png);
+  width: 250px;
+  height: 303px;
+}
+
+.jordan {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/jordan.png);
+  width: 200px;
+  height: 268px;
+}
+
+.danny {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/danny.png);
+  width: 260px;
+  height: 334px;
+}
+
+.jonathan {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/johnathon.png);
+  width: 200px;
+  height: 353px;
+}
+
+.brian {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/brian.png);
+  width: 260px;
+  height: 352px;
+}
+
+.kevin {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/kevin.png);
+  width: 280px;
+  height: 282px;
+}
+
+.howied {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/howied.png);
+  width: 250px;
+  height: 330px;
+}
+
+.nick {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/nick.png);
+  width: 260px;
+  height: 306px;
+}
+
+.aj {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/aj.png);
+  width: 199px;
+  height: 254px;
+}
+<script>
+ var _containerHeight = 4000;
+ var _width, _height, _scrollHeight;
+ var letters = document.getElementsByTagName('span');
+ var _movingElements = [];
+ var _scrollPercent = 0;
+ var pre = prefix();
+ var _jsPrefix  = pre.lowercase;
+ if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
+ var _cssPrefix = pre.css;
+ var _positions = [
+  {
+    name: 'joey', 
+   	start: {
+    	percent: 0.2, x: -0.2, y: 0.2
+  	},
+    end: {
+      percent: 0.8, x: 0.9, y: 0.9
+    }
+  },
+  {
+    name: 'donnie', 
+   	start: {
+    	percent: 0.05, x: 0.9, y: 0.05
+  	},
+    end: {
+      percent: 0.7, x: 0.3, y: 0.9
+    }
+  },
+  {
+    name: 'jordan', 
+   	start: {
+    	percent: 0.3, x: 0.1, y: 0.5
+  	},
+    end: {
+      percent: 0.8, x: 0.95, y: 0.6
+    }
+  },
+  {
+    name: 'danny', 
+   	start: {
+    	percent: 0.01, x: 0.1, y: 0.005
+  	},
+    end: {
+      percent: 0.4, x: 0.9, y: 0.28
+    }
+  },
+  {
+    name: 'jonathan', 
+   	start: {
+    	percent: 0.3, x: 0.9, y: 0.5
+  	},
+    end: {
+      percent: 0.8, x: 0.1, y: 0.6
+    }
+  },
+  {
+    name: 'aj', 
+   	start: {
+    	percent: 0.18, x: 1.05, y: 0.2
+  	},
+    end: {
+      percent: 0.7, x: 0.1, y: 0.9
+    }
+  },
+  {
+    name: 'brian', 
+   	start: {
+    	percent: 0.08, x: 0.1, y: 0.05
+  	},
+    end: {
+      percent: 0.7, x: 0.7, y: 0.9
+    }
+  },
+  {
+    name: 'nick', 
+   	start: {
+    	percent: 0.2, x: 0.8, y: 0.45
+  	},
+    end: {
+      percent: 0.7, x: 0.12, y: 0.6
+    }
+  },
+  {
+    name: 'howied', 
+   	start: {
+    	percent: 0.02, x: 0.8, y: 0.005
+  	},
+    end: {
+      percent: 0.5, x: 0.2, y: 0.50
+    }
+  },
+  {
+    name: 'kevin', 
+   	start: {
+    	percent: 0.7, x: 0.9, y: 0.7
+  	},
+    end: {
+      percent: 0.95, x: 0.1, y: 0.8
+    }
+  }
+ ]
+
+ resize();
+ initMovingElements();
+
+ function initMovingElements() {
+  for (var i = 0; i < _positions.length; i++) {
+    _positions[i].diff = {
+      percent: _positions[i].end.percent - _positions[i].start.percent,
+      x: _positions[i].end.x - _positions[i].start.x,
+      y: _positions[i].end.y - _positions[i].start.y,
+    }
+    var el = document.getElementsByClassName('boy '+_positions[i].name)[0];
+    _movingElements.push(el);
+  }
+ }
+
+ function resize() {
+	_width = window.innerWidth;
+  _height = window.innerHeight;
+  _scrollHeight = _containerHeight-_height;
+ }
+
+ function rotateLetters() {
+  for (var i = 0; i < letters.length; i++) {
+    letters[i].style[_jsPrefix+'Transform'] = 'rotateY('+(_scrollPercent*500)+'deg)'
+  }
+ }
+
+ function updateElements() {
+  for (var i = 0; i < _movingElements.length; i++) {
+    var p = _positions[i];
+    if(_scrollPercent <= p.start.percent) {
+      _movingElements[i].style[_jsPrefix+'Transform'] = 'translate3d('+(p.start.x*_width)+'px, '+(p.start.y*_containerHeight)+'px, 0px)';
+    } else if(_scrollPercent >= p.end.percent) {
+      _movingElements[i].style[_jsPrefix+'Transform'] = 'translate3d('+(p.end.x*_width)+'px, '+(p.end.y*_containerHeight)+'px, 0px)';
+    } else {
+      _movingElements[i].style[_jsPrefix+'Transform'] = 'translate3d('+(p.start.x*_width + (p.diff.x*(_scrollPercent-p.start.percent)/p.diff.percent*_width))+'px, '+
+        (p.start.y*_containerHeight + (p.diff.y*(_scrollPercent-p.start.percent)/p.diff.percent*_containerHeight))+'px, 0px)';
+    }
+  }
+ }
+
+
+
+ function loop() {
+  _scrollOffset = window.pageYOffset || window.scrollTop;
+  _scrollPercent = _scrollOffset/_scrollHeight || 0;
+  rotateLetters();
+  updateElements();
+  
+  requestAnimationFrame(loop);
+ }
+
+ loop();
+
+ window.addEventListener('resize', resize);
+
+
+ function prefix() {
+  var styles = window.getComputedStyle(document.documentElement, ''),
+    pre = (Array.prototype.slice
+      .call(styles)
+      .join('') 
+      .match(/-(moz|webkit|ms)-/) || (styles.OLink === '' && ['', 'o'])
+    )[1],
+    dom = ('WebKit|Moz|MS|O').match(new RegExp('(' + pre + ')', 'i'))[1];
+   return {
+    dom: dom,
+    lowercase: pre,
+    css: '-' + pre + '-',
+    js: pre[0].toUpperCase() + pre.substr(1)
+  };
+ }
+</script>
