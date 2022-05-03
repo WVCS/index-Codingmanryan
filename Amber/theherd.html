@@ -2,31 +2,42 @@
  <head>
  </head>
  <body>
-  <div class="container">
-   <div class="boy joey"></div>
-   <div class="boy donnie"></div>
-   <div class="boy jordan"></div>
-   <div class="boy danny"></div>
-   <div class="boy jonathan"></div>
-   <div class="boy brian"></div>
-   <div class="boy aj"></div>
-   <div class="boy nick"></div>
-   <div class="boy kevin"></div>
-   <div class="boy howied"></div>
-  </div>
-  <div class="text">
-   <span>#</span>
-   <span>THE</span>
-   <span>HEARD</span>
-   <span>HERD!</span>
-  </div>
+<div class="container">
+  <div class="boy joey"></div>
+  <div class="boy donnie"></div>
+  <div class="boy jordan"></div>
+  <div class="boy danny"></div>
+  <div class="boy jonathan"></div>
+  <div class="boy brian"></div>
+</div>
+<div class="text">
+  <span>#</span>
+  <span>THE</span>
+  <span>HEARD</span>
+  <span>HERD!</span>
+</div>
+<video id="background-video" autoplay loop muted poster="https://images.saatchiart.com/saatchi/1792643/art/8522801/7586822-HSC00001-6.jpg">
+ <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+</video>
  </body>
 </html>
+<style>
 body {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/90spattern.jpg');
+  background-image: linear-gradient(#0366Bc,black);
   overflow: hidden;
   overflow-y: scroll;
   height: 4000px;
+}
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -62,171 +73,131 @@ span {
 }
 
 .joey {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/joey.png);
+  /*done*/
+  background: url(https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 300px;
   height: 418px;
+  z-index:10;
 }
 
 .donnie {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/donnie.png);
+  /*done*/
+  background: url(https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 250px;
   height: 303px;
 }
 
 .jordan {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/jordan.png);
+  /*done*/
+  background: url(https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 200px;
   height: 268px;
 }
 
 .danny {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/danny.png);
+  /*done*/
+  background: url(https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 260px;
   height: 334px;
 }
 
 .jonathan {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/johnathon.png);
+  /*done*/
+  background: url(https://media.istockphoto.com/photos/concept-image-of-a-magnifying-glass-on-blue-background-with-a-word-picture-id1316134499?b=1&k=20&m=1316134499&s=170667a&w=0&h=DsKKZ2Sc6k7bZQpxZTcHyV7AJqyy-haTXYZlrA2Jy-c=);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 200px;
   height: 353px;
 }
 
 .brian {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/brian.png);
+  /*done*/
+  background: url(https://image.shutterstock.com/image-photo/word-example-written-on-magnifying-260nw-1883859943.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 260px;
   height: 352px;
 }
-
-.kevin {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/kevin.png);
-  width: 280px;
-  height: 282px;
-}
-
-.howied {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/howied.png);
-  width: 250px;
-  height: 330px;
-}
-
-.nick {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/nick.png);
-  width: 260px;
-  height: 306px;
-}
-
-.aj {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/aj.png);
-  width: 199px;
-  height: 254px;
-}
+</style>
 <script>
- var _containerHeight = 4000;
- var _width, _height, _scrollHeight;
- var letters = document.getElementsByTagName('span');
- var _movingElements = [];
- var _scrollPercent = 0;
- var pre = prefix();
- var _jsPrefix  = pre.lowercase;
- if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
- var _cssPrefix = pre.css;
- var _positions = [
+var _containerHeight = 4000;
+var _width, _height, _scrollHeight;
+var letters = document.getElementsByTagName('span');
+var _movingElements = [];
+var _scrollPercent = 0;
+var pre = prefix();
+var _jsPrefix  = pre.lowercase;
+if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
+var _cssPrefix = pre.css;
+var _positions = [
   {
     name: 'joey', 
    	start: {
-    	percent: 0.2, x: -0.2, y: 0.2
+    	percent: 0.1, x: -0.2, y: 0.2
   	},
     end: {
-      percent: 0.8, x: 0.9, y: 0.9
+      percent: 0.2, x: 0.4, y: 0.2
     }
   },
   {
     name: 'donnie', 
    	start: {
-    	percent: 0.05, x: 0.9, y: 0.05
+    	percent: 0.05, x: 0.8, y: 0.04
   	},
     end: {
-      percent: 0.7, x: 0.3, y: 0.9
+      percent: 0.7, x: 0.02, y: 0.7
     }
   },
   {
     name: 'jordan', 
    	start: {
-    	percent: 0.3, x: 0.1, y: 0.5
+    	percent: 0.2, x: 1.1, y: 0.3
   	},
     end: {
-      percent: 0.8, x: 0.95, y: 0.6
+      percent: 0.3, x: 0.4, y: 0.3
     }
   },
   {
     name: 'danny', 
    	start: {
-    	percent: 0.01, x: 0.1, y: 0.005
+    	percent: 0.01, x: 0.1, y: 0.04
   	},
     end: {
-      percent: 0.4, x: 0.9, y: 0.28
+      percent: 0.4, x: 0.85, y: 0.4
     }
   },
   {
     name: 'jonathan', 
    	start: {
-    	percent: 0.3, x: 0.9, y: 0.5
+    	percent: 0.3, x: 0.1, y: 1.1
   	},
     end: {
-      percent: 0.8, x: 0.1, y: 0.6
-    }
-  },
-  {
-    name: 'aj', 
-   	start: {
-    	percent: 0.18, x: 1.05, y: 0.2
-  	},
-    end: {
-      percent: 0.7, x: 0.1, y: 0.9
+      percent: 0.4, x: 0.1, y: 0.4
     }
   },
   {
     name: 'brian', 
    	start: {
-    	percent: 0.08, x: 0.1, y: 0.05
+    	percent: 0.3, x: -0.15, y: 0.3
   	},
     end: {
-      percent: 0.7, x: 0.7, y: 0.9
-    }
-  },
-  {
-    name: 'nick', 
-   	start: {
-    	percent: 0.2, x: 0.8, y: 0.45
-  	},
-    end: {
-      percent: 0.7, x: 0.12, y: 0.6
-    }
-  },
-  {
-    name: 'howied', 
-   	start: {
-    	percent: 0.02, x: 0.8, y: 0.005
-  	},
-    end: {
-      percent: 0.5, x: 0.2, y: 0.50
-    }
-  },
-  {
-    name: 'kevin', 
-   	start: {
-    	percent: 0.7, x: 0.9, y: 0.7
-  	},
-    end: {
-      percent: 0.95, x: 0.1, y: 0.8
+      percent: 0.7, x: 0.15, y: 0.7
     }
   }
- ]
+]
 
- resize();
- initMovingElements();
+resize();
+initMovingElements();
 
- function initMovingElements() {
+function initMovingElements() {
   for (var i = 0; i < _positions.length; i++) {
     _positions[i].diff = {
       percent: _positions[i].end.percent - _positions[i].start.percent,
@@ -236,21 +207,21 @@ span {
     var el = document.getElementsByClassName('boy '+_positions[i].name)[0];
     _movingElements.push(el);
   }
- }
+}
 
- function resize() {
+function resize() {
 	_width = window.innerWidth;
   _height = window.innerHeight;
   _scrollHeight = _containerHeight-_height;
- }
+}
 
- function rotateLetters() {
+function rotateLetters() {
   for (var i = 0; i < letters.length; i++) {
     letters[i].style[_jsPrefix+'Transform'] = 'rotateY('+(_scrollPercent*500)+'deg)'
   }
- }
+}
 
- function updateElements() {
+function updateElements() {
   for (var i = 0; i < _movingElements.length; i++) {
     var p = _positions[i];
     if(_scrollPercent <= p.start.percent) {
@@ -262,25 +233,25 @@ span {
         (p.start.y*_containerHeight + (p.diff.y*(_scrollPercent-p.start.percent)/p.diff.percent*_containerHeight))+'px, 0px)';
     }
   }
- }
+}
 
 
 
- function loop() {
+function loop() {
   _scrollOffset = window.pageYOffset || window.scrollTop;
   _scrollPercent = _scrollOffset/_scrollHeight || 0;
   rotateLetters();
   updateElements();
   
   requestAnimationFrame(loop);
- }
+}
 
- loop();
+loop();
 
- window.addEventListener('resize', resize);
+window.addEventListener('resize', resize);
 
 
- function prefix() {
+function prefix() {
   var styles = window.getComputedStyle(document.documentElement, ''),
     pre = (Array.prototype.slice
       .call(styles)
@@ -288,11 +259,11 @@ span {
       .match(/-(moz|webkit|ms)-/) || (styles.OLink === '' && ['', 'o'])
     )[1],
     dom = ('WebKit|Moz|MS|O').match(new RegExp('(' + pre + ')', 'i'))[1];
-   return {
+  return {
     dom: dom,
     lowercase: pre,
     css: '-' + pre + '-',
     js: pre[0].toUpperCase() + pre.substr(1)
   };
- }
+}
 </script>
